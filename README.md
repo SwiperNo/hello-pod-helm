@@ -22,3 +22,11 @@ This repository demonstrates two deployment methods:
 2. **Helm Deployment** using `init.sh` script.
 
 The example application, Super Mario, is deployed with a NodePort service for external access.
+
+
+## Prerequisites
+
+- Kubernetes cluster (Minikube, GKE, EKS, AKS, etc.)
+- `kubectl` configured to interact with your Kubernetes cluster
+- Optional: Helm installed (if using Helm deployment)
+
