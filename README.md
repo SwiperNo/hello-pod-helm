@@ -45,12 +45,13 @@ To deploy the application using Helm, run the `init.sh` script. This script will
 
 ```sh
 ./init.sh
+```
 
 This script performs the following steps:
 
 - Installs Helm (if not already installed)
 - Deploys the application using Helm
-```
+
 
 ## Cleanup
 
