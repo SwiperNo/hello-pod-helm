@@ -30,3 +30,35 @@ The example application, Super Mario, is deployed with a NodePort service for ex
 - `kubectl` configured to interact with your Kubernetes cluster
 - Optional: Helm installed (if using Helm deployment)
 
+## Manual Deployment
+
+To manually deploy the application, run the following command:
+
+```sh
+kubectl apply -f hello-pod-single-pod.yml
+kubectl apply -f supermario-pod-single-pod-pattern-wtih-service.yml
+
+
+## Helm Deployment
+
+To deploy the application using Helm, run the `init.sh` script. This script will install Helm (if not already installed) and deploy the application using a Helm chart.
+
+```sh
+./init.sh
+
+This script performs the following steps:
+
+- Installs Helm (if not already installed)
+- Deploys the application using Helm
+
+
+## Cleanup
+
+To clean up the deployed resources, run the `clean.sh` script:
+
+```sh
+./clean.sh
+
+
+This script will remove the Helm release and delete the resources created by the manual deployment.
+
