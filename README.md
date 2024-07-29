@@ -37,7 +37,7 @@ To manually deploy the application, run the following command:
 ```sh
 kubectl apply -f hello-pod-single-pod.yml
 kubectl apply -f supermario-pod-single-pod-pattern-wtih-service.yml
-
+```
 
 ## Helm Deployment
 
@@ -50,7 +50,7 @@ This script performs the following steps:
 
 - Installs Helm (if not already installed)
 - Deploys the application using Helm
-
+```
 
 ## Cleanup
 
@@ -58,7 +58,35 @@ To clean up the deployed resources, run the `clean.sh` script:
 
 ```sh
 ./clean.sh
-
+```
 
 This script will remove the Helm release and delete the resources created by the manual deployment.
+
+
+Let's fix the **Directory Structure** section again for clarity:
+
+```markdown
+## Directory Structure
+
+```plaintext
+hello-pod-helm/
+├── charts/
+│   └── supermario/
+├── templates/
+│   └── deployment.yaml
+├── init.sh
+├── clean.sh
+├── README.md
+```
+
+- `charts/supermario/`: Contains the Helm chart for the Super Mario application.
+- `templates/deployment.yaml`: The Kubernetes deployment manifest.
+- `init.sh`: Script to initialize and deploy using Helm.
+- `clean.sh`: Script to clean up the deployed resources.
+
+
+## Contributing
+
+Feel free to open issues or submit pull requests if you find any bugs or have suggestions for improvements.
+
 
