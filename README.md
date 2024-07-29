@@ -1,4 +1,4 @@
-# Hello Pod Helm
+# Hello Pod Helm - Deploy SuperMario
 
 This repository showcases a single-pod pattern deployment on Kubernetes. Additionally, it includes a setup for deploying Super Mario using that pattern with a service exposing a NodePort.
 
@@ -30,4 +30,6 @@ The example application, Super Mario, is deployed with a NodePort service for ex
 To manually deploy the application, run the following command:
 
 ```sh
-kubectl apply -f deployment.yaml
+kubectl apply -f hello-pod-single.pod.yml
+kubectl apply -f supermario-pod-single-pod-pattern-wtih-service.yml
+
